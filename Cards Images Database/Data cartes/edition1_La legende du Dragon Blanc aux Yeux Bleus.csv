@@ -1,0 +1,113 @@
+Monster,normal,Geant Hitotsu-Me,terre,bete-guerrier,Cyclope dont les bras puissants ont pour mission d'asséner des coups impitoyables.,1200,1000,4
+Monster,normal,Crane Serviteur,teneble,zombie,Fantôme squelette très commun et qui n'est pas très fort mais qui en nombre peut devenir embarrassant.,300,200,1
+Monster,normal,Insecte Elementaire,terre,insecte,La forêt est l'environnement préféré de cet insecte que l'on aperçoit généralement dans les marais.,500,700,2
+Monster,normal,Cimetiere de Mammouth,terre,dinosaure,Mammouth qui protège les siens et qui est absolument sans pitié face aux déterreurs de cadavres.,1200,800,3
+Monster,normal,Croc Argente,terre,bete,Un loup des neiges magnifique mais terriblement violent au combat.,1200,800,3
+Monster,normal,Anthracite,terre,bete,Ce monstre entièrement gris n'a que rarement été aperçu par des yeux de mortels.,800,900,3
+Monster,normal,Jugement Cauchemardesque,tenebre,demon,Ce démon rend son jugement sur les ennemis qu'il maintient prisonniers dans des cercueils.,1300,900,4
+Monster,normal,Nemuriko,tenebre,magicien,Créature infantile qui commande au démon du sommeil de plonger ses ennemis dans le sommeil éternel.,800,700,3
+Monster,normal,La 13eme Tombe,tenebre,zombie,Un zombie qui surgit de l'emplacement n° 13 une tombe vide.,1200,900,3
+Monster,normal,Manipulateur de Flammes,feu,magicien,Ce Magicien attaque ses ennemis à l'aide de sorts liés au feu tels que Mer de flammes et Mur de feu.,900,1000,3
+Monster,normal,Oeuf de Monstre,terre,guerrier,Guerrier caché dans un oeuf et qui attaque ses ennemis en lançant des coquilles d'oeuf.,600,900,3
+Monster,normal,Plante de Feu,terre,plante,Plante qui respire du feu et que l'on trouve poussant près des volcans.,700,600,2
+Monster,normal,Roi Sombre des Abysses,tenebre,demon,On dit que ce roi du néant a e pouvoir de régner sur les ténèbres.,1200,800,3
+Monster,normal,Reflet Infernal N°2,lumiere,bete ailee,Monstre à plumes qui invoque des renforcements d'un miroir qu'il tient dans ses mains.,1100,1400,4
+Monster,normal,Tigre Tortue,eau,aqua,Tigre recouvert d'une cuirasse protectrice qui attaque à l'aide de griffes acérées comme des lames de rasoir.,1000,1500,4
+Monster,normal,Petit Dragon,vent,dragon,Dragon minuscule utilise toute la surface de son corps et toute sa force pour attaquer.,600,700,2
+Monster,normal,Petit Ange,lumiere,elfe,Minuscule fée très rapide et difficile à toucher.,600,900,3
+Monster,normal,Ame Hinotama,feu,pyro,Créature incandescente qui détruit tout ce qu'elle trouve sur son passage.,600,500,2
+Monster,normal,Kagemusha de la Flamme Bleue,terre,guerrier,Double du souverain de la flamme bleue et véritable fine lame.,800,400,2
+Monster,normal,Seigneur des Tenebres a Deux Bouches,terre,dinosaure,Dinosaure à la double mâchoire meurtrière il stocke de l'électricité dans sa corne et crache de grands éclairs de sa bouche arrière.,900,700,3
+Monster,normal,Dissolveroc,terre,rocher,Monstre né dans les douves il produit une chaleur intense capable de faire fondre ses ennemis.,900,1000,3
+Monster,normal,Aqua Racine,eau,aqua,Amphibien capable d'invoquer un énorme raz-de-marée sur les mers des ténèbres pour éliminer ses ennemis monstrueux.,900,800,3
+Monster,normal,Le Furieux Roi des Mers,eau,aqua,Grand Roi des sept mers il est capable d'invoquer d'énormes raz-de-marée pour faire couler ses ennemis.,800,700,3
+Monster,normal,Roi Fantome Vert,terre,plante,Ce jeune roi des forêts vit dans un monde de verdure entouré d'arbres et d'animaux.,500,1600,3
+Monster,normal,Rayon et Temperature,lumiere,elfe,Le Soleil et le Vent du nord se donnent la main pour créer une combinaison dévastatrice de chaleur et de vents soufflants en tempête.,1000,1000,3
+Monster,normal,Roi Brume,tenebre,demon,Démon qui vit dans un écran aveuglant de fumée.,1000,900,3
+Monster,normal,Mouton Mystique N°2,terre,bete,Mouton monstrueux doté d'une longue queue qui hypnotise ses ennemis.,800,1000,3
+Monster,normal,Masaki le Spadassin Legendaire,terre,guerrier,Masaki maître légendaire de l'épée a survécu à plus de 100 batailles.,1100,1100,4
+Monster,normal,Kurama,vent,bete ailee,Oiseau cruel qui attaque des cieux avec une queue qui ressemble à un fouet.,800,800,3
+Spell,equipment,Epee Legendaire,Un monstre de Type Guerrier équipé de cette carte augmente son ATK et sa DEF de 300 points.
+Spell,equipment,Crocs Demoniaques,Un monstre de Type Bête équipé de cette carte augmente son ATK et sa DEF de 300 points.
+Spell,equipment,Cristal Violet,Un monstre de Type Zombie équipé de cette carte augmente son ATK et sa DEF de 300 points.
+Spell,equipment,Livre d'Arts Secrets,Un monstre de Type Magicien équipé de cette carte augmente son ATK et sa DEF de 300 points.
+Spell,equipment,Puissance de Kaishin,Un monstre de Type Aqua équipé de cette carte augmente son ATK et sa DEF de 300 points.
+Spell,field,Foret,Augmente l'ATK et la DEF de tous les monstres de Type Insecte Bête Plante Guerrier-Bête de 200 points
+Spell,field,Terre Devastee,Augmente l'ATK et la DEF de tous les monstres de Type Dinosaure Zombie et Rocher de 200 points
+Spell,field,Montagne,Augmente l'ATK et la DEF de tous les monstres de Type Dragon Bête Ailée et Tonnerre de 200 points
+Spell,field,Sogen,Augmente l'ATK et la DEF de tous les monstres de Type Guerrier-bête et Guerrier de 200 points
+Spell,field,Umi,Augmente l'Atk et la DEF de tous les monstres de Type Poisson Serpent de Mer Tonnerre et Aqua de 200 points. Diminue aussi l'ATK et la DEF de tous les monstres de Type Machine et Pyro de 200 points
+Spell,field,Yami,Augmente l'ATK et la DEF de tous les monstres de Type Démon et Magicien de 200 points. Diminue aussi l'ATK et la DEF de tous les monstres de Type Elfe de 200 points.
+Spell,normal,Medicament Rouge,Augmentez vos Life Points de 500 Points.
+Spell,normal,Etincelles,Inflige 200 points de Dommages Directs aux Life Points de votre adversaire.
+Spell,normal,Hinotama,Inflige 500 points de Dommages Directs aux Life Points de votre adversaire.
+Spell,normal,Piege Supprime,Détruit 1 Carte Piège face recto sur le Terrain.
+Monster,normal,Tyhone,vent,bete ailee,Cette créature capable de cracher des boulets de canon pour les attaques à longue portée est particulièrement efficace dans les batailles en montagne.,1200,1400,4
+Monster,normal,Guerrier Castor,terre,bete-guerrier,Cette créature compense sa petite taille par une excellent méthode défensive dans les batailles en plaine.,1200,1500,4
+Monster,normal,Uraby,terre,dinosaure,Rapide sur ses pattes ce dinosaure lacère ses ennemis avec ses griffes acérées,1500,800,4
+Monster,normal,Fantome Spirituel,tenebre,demon,Vêtue d'un smoking noir cette créature préside les ténèbres.,1400,1300,4
+Monster,normal,Larvas,terre,bete,Créature ressemblant à un oiseau très rapide. Elle étrangle les monstres adverses avec ses longs bras fins.,800,1000,3
+Monster,normal,Cuirasse Epaisse,terre,guerrier,Armure vivante qui attaque ses ennemis avec une prise capable de broyer les os.,300,1200,3
+Monster,normal,Mangeur d'Homme,terre,plante,Plante mangeuse d'hommes dotée d'antennes venimeuses pour attaquer ses ennemis.,800,600,2
+Monster,normal,M-Guerrier N°1,terre,guerrier,Spécialisé dans les attaques combinées ce guerrier utilise le magnétisme pour empêcher l'ennemi de fuir.,1000,500,3
+Monster,normal,M-Guerrier N°2,terre,guerrier,Spécialisé dans les attaques combinées ce guerrier utilise le magnétisme pour empêcher l'ennemi de fuir.,500,1000,3
+Monster,normal,Armaill,terre,guerrier,Guerrier étrange qui manie trois lames meurtrières avec ses deux mains et sa queue.,700,1300,3
+Monster,normal,Terra le Terrible,tenebre,demon,Cette créature qui vit dans les marais est un serviteur des forces du mal.,1200,1300,4
+Monster,normal,Panda Fou,terre,bete,Bête sauvage qui transporte un gros bâton en bambou pour frapper ses ennemis.,1200,1000,4
+Monster,normal,Kumootoko,terre,insecte,Enorme araignée intelligente qui piège ses ennemis dans sa toile.,700,1400,3
+Monster,normal,Chauve-Souris Meda,tenebre,demon,Démon cyclope créé par un serviteur des forces des ténèbres il utilise Souffles des ténèbres pour supprimer ses ennemis.,800,400,2
+Monster,normal,Sirene Envoutante,eau,poisson,Magnifique sirène qui attire les voyageurs dans une tombe d'eau.,1200,900,3
+Monster,normal,Fireyarou,feu,pyro,Créature malveillante entourée de flammes qui attaque ses ennemis avec des flammes intenses.,1300,1000,4
+Monster,normal,Dragon Bouclier a un oeil,vent,dragon,Ce dragon porte un bouclier non seulement pour sa protection mais également pour écraser ses ennemis.,700,1300,3
+Spell,equipment,Energie Sombre,Un monstre de Type Démon équipé de cette carte augmente son ATK et sa DEF de 300 points.
+Spell,equipment,Armure Canon-Laser,Un monstre de Type Insecte équipé de cette carte augmente son ATK et sa DEF de 300 points.
+Spell,equipment,Germes Ignobles,Un monstre de Type Plante équipé de cette carte augmente son ATK et sa DEF de 300 points.
+Spell,equipment,Arc et Fleches d'Argent,Un monstre de Type Elfe équipé de cette carte augmente son ATK et sa DEF de 300 points.
+Spell,equipment,Tresor de Dragon,Un monstre de Type Dragon équipé de cette carte augmente son ATK et sa DEF de 300 points.
+Spell,equipment,Electrofouet,Un monstre de Type Tonnerre équipé de cette carte augmente son ATK et sa DEF de 300 points.
+Spell,equipment,Lune Mystique,Un monstre de Type Bête-Guerrier équipé de cette carte augmente son ATK et sa DEF de 300 points.
+Spell,equipment,Usine de Convertisseurs,Un monstre de Type Machine équipé de cette carte augmente son ATK et sa DEF de 300 points.
+Spell,equipment,Elevateur de Chaleur Corporelle,Un monstre de Type Dinosaure équipé de cette carte augmente son ATK et sa DEF de 300 points.
+Spell,equipment,Suit le Vent,Un monstre de Type Bete Ailée équipé de cette carte augmente son ATK et sa DEF de 300 points.
+Monster,normal,Seadra Percant,eau,aqua,En utilisant les pointes qui ressortent de son corps cette créature poignarde ses adversaires et les remplit d'électricité.,1600,1300,5
+Monster,normal,Bete au Fil Tendu,terre,tonnerre,Cette créature attaque à coup d'ondes électromagnétiques.,1200,1300,4
+Monster,normal,Oiseau au Crane Rouge,vent,bete ailee,Ce monstre attaque en piqué avec une pluie de couteaux cachés sous ses ailes.,1550,1200,4
+Monster,normal,Gres,terre,rocher,Surgit du sous-sol et attaque avec ses longues tentacules qui ressemblent à des serpents.,1300,1600,5
+Monster,normal,Misairuzame,eau,poisson,Poisson lanceur de missiles protégé par des pointes meurtrières,1400,1600,5
+Monster,normal,Ogre d'Acier N°1,terre,machine,Idole d'acier vénérée dans la lande des Machines.,1400,1800,5
+Monster,normal,Dragon Inferieur,vent,dragon,Dragon inférieur incapable de lancer des flammes.,1200,1000,4
+Monster,normal,Epines des Tenebres,terre,plante,Plante épineuse que l'on trouve dans les landes des ténèbres et qui encercle des voyageurs imprudents.,1200,900,3
+Monster,normal,Lezard Bavant,terre,reptile,Serpent de forme humaine suceur de sang qui attaque tout être vivant qui s'en approche.,900,800,3
+Monster,normal,Etoile de Mer Cuirassee,eau,aqua,Étoile de mer bleutée à la peau épaisse capable de repousser les attaques.,850,1400,4
+Monster,normal,Chevalier Succubus,tenebre,guerrier,Mage guerrière adepte de la création de sports à vous faire froid dans le dos.,1650,1300,5
+Monster,fusion,Charubin le Chevalier de Feu,feu,guerrier,Oeuf de Monstre + Ame Hinotama,1100,800,3
+Monster,fusion,Dragon du Feu Noir,tenebre,dragon,plante de feu + petit dragon,1500,1250,4
+Monster,fusion,Fusionniste,terre,bete,Petit Ange + Mouton Mystique n°2,900,700,3
+Monster,normal,Aqua Madoor,eau,magicien,Mage des eaux qui conjure un mur liquide afin d'écraser tous les ennemis qui s'opposent à lui.,1200,2000,4
+Monster,fusion,Fantome de Flamme,tenebre,zombie,Crâne Serviteur - Dissolveroc,1000,800,3
+Spell,continue trap,Jarre de Capture du Dragon,Tous les monstres de Type Dragon sur le terrain passent Position de Défense et restent dans cette positioin tat que cette carte reste face recto sur le terrain.
+Spell,normal,Fissure,Détruit 1 monstre face recto de votre adversaire avec l'ATK la plus basse.
+Spell,trap,Attaque en Double Fourche,Sélectionnez et détruisez 2 de vos monstres et 1 des monstres de votre adversaire.
+Spell,normal,Goule Fossoyeur,Sélectionnez 1 ou 2 Cartes Monstre dans le Cimetière de votre adversaire et retirez cette ou ces cartes du jeu.
+Monster,fusion,Guerrier Karbonala,terre,guerrier,M-Guerrier N°1 + M-Guerrier N°2,1500,1200,4
+Monster,normal,Soldat Geant de Pierre,terre,rocher,Guerrier géant en pierre. Un coup de poing de cette créature est capable de faire trembler la terre.,1300,2000,3
+Monster,effect,Dechireur de Cartes,tenebre,demon,FLIP: Détruit 1 Carte Piège sur le Terrain. Si la cible de cette carte est face verso retournez-la face recto. S'il s'agit d'une Carte Piège elle est détruite. Sinon retournez-la dans sa position face verso. La carte retournée n'est pas Activée.,1380,1930,5
+Monster,normal,Esprit de la Harpe,lumiere,elfe,Esprit qui apaise l'âme grâce à la musique de sa harpe divine.,800,2000,4
+Monster,fusion,Dragoness le Chevalier Malfaisant,vent,guerrier,Armaill - Dragon Bouclier à un,1200,900,3
+Spell,normal,Stop Defense,Sélectionnez 1 des monstres de votre adversaire et passez-le en Position d'Attaque. Si la carte est face cachée, retournez-la face visible Si la carte a un effet flip, celui-ci est immédiatement activé.
+Spell,normal,Remede Secret du Gobelin,Augmentez vos Life Points de 600 points.
+Spell,normal,Flamme Ultime,Infligez 600 points de dommages aux Points de Vie de l'adversaire.
+Monster,fusion,Dragon Metallique,vent,machine,Ogre d'Acier N°1 - Dragon Inférieur,1850,1700,6
+Monster,effect,Ninja Arme,terre,guerrier,FLIP: Détruit 1 Carte Magie sur le Terrain Si la cible de cette carte est face verso retournez-la face recto. S'il sagit d'une Carte Magie elle est détruite. Sinon retournez-la dans sa position face verso La carte retournée n'est pas Activée.,300,300,1
+Monster,fusion,Loup Fleuri,terre,bete,Croc Argenté + Épines des Ténèbres,1800,1400,5
+Monster,effect,Hane-Hane,terre,bete,FLIP: Sélectionnez 1 Carte Monstre sur le Terrain (quelle que soit sa position) et renvoyez-la dans la main de son propriétaire.,450,500,2
+Spell,normal,Pot de Cupidite,Piochez 2 cartes de votre Deck.
+Monster,fusion,Spadassin des Flammes,feu,guerrier,Manipulateur de Flammes + Masaki le Spadassin Légendaire,1800,1600,5
+Monster,normal,Gaia le Chevalier Implacable,terre,guerrier,Chevalier dont le destrier voyage plus vite que le vent. Sa charge de bataille est une force à ne pas sous-estimer.,2300,2100,7
+Monster,normal,Gardien Celte,terre,guerrier,Cet elfe qui a appris à manier l'épée déroute l'ennemi par des attaques éclair.,1400,1200,4
+Spell,normal,Trou Noir,Détruisez tous les monstres sur le Terrain.
+Spell,normal,Raigeki,Détruisez tous les monstres sur le terrain de votre adversaire.
+Spell,trap,Trappe,Lorsque votre adversaire fait une Invocation Normale ou une Invocation Flip d'un Monstre avec une attaque de 1000 points ou plus ce Monstre est détruit.
+Spell,normal,Polymerisation,Envoyez de votre main ou de votre Terrain au Cimetière des Monstres Matériel de Fusion qui sont listés sur une Carte Monstre de Fusion et faites l'Invocation Spéciale du Monstre de Fusion de votre Fusion Deck.
+Monster,normal,Elfe Mystique,lumiere,elfe,Une délicate elfe qui manque d'offensive mais dont la fantastique défense est renforcée par un pouvoir mystique.,800,2000,4
+Monster,normal,Malediction du Dragon,tenebre,dragon,Dragon malfaisant qui exploite les forces des ténèbres pour exécuter une attaque puissante.,2000,1500,5
