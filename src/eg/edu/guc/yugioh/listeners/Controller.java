@@ -530,6 +530,24 @@ public class Controller implements ActionListener,MouseListener {
 	public void actionPerformed(ActionEvent arg0) {
 		if(arg0.getSource() instanceof NextPhBut){
 			board.getActivePlayer().setEvenement("passe");
+			//time spells
+			for (int i=0;i<board.getActivePlayer().getField().getSpellArea().size();i++){
+				if (board.getActivePlayer().getField().getSpellArea().get(i).isTimespell()){
+					board.getActivePlayer().getField().getSpellArea().get(i).setTimeturn(board.getActivePlayer().getField().getSpellArea().get(i).getTimeturn()-1);
+					if (board.getActivePlayer().getField().getSpellArea().get(i).getTimeturn() == 0){
+						board.getActivePlayer().getField().removeSpellToGraveyard(board.getActivePlayer().getField().getSpellArea().get(i));
+					}
+				}
+			}
+			for (int i=0;i<board.getOpponentPlayer().getField().getSpellArea().size();i++){
+				if (board.getOpponentPlayer().getField().getSpellArea().get(i).isTimespell()){
+					board.getOpponentPlayer().getField().getSpellArea().get(i).setTimeturn(board.getOpponentPlayer().getField().getSpellArea().get(i).getTimeturn()-1);
+					if (board.getOpponentPlayer().getField().getSpellArea().get(i).getTimeturn() == 0){
+						board.getOpponentPlayer().getField().removeSpellToGraveyard(board.getOpponentPlayer().getField().getSpellArea().get(i));
+					}
+				}
+			}
+			
 			board.getActivePlayer().endPhase();
 			
 			gui.getCurrphase().setText("Current Phase: " + Card.getBoard().getActivePlayer().getField().getPhase());
@@ -627,6 +645,8 @@ public class Controller implements ActionListener,MouseListener {
 								SpellCard spell = board.getOpponentPlayer().getField().getSpellArea().get(i);
 								if (spell.getType2().equals("continue trap") && !spell.isHidden()){
 									((ContinueTrapCard) spell).actionterrain(gui);
+								} else if (!spell.isHidden() && spell.isTimespell()){
+									spell.actionmonstreadversejoue(monster);
 								}
 							}
 							if (gui.getP1().getField().getFieldarea().size()>0){
@@ -1143,6 +1163,7 @@ public class Controller implements ActionListener,MouseListener {
 								for (int i1=0;i1<nbmaterielsfusions;i1++){
 									if (targets.get(i1)==null) {
 										JOptionPane.showMessageDialog(gui, "No compatible monsters");
+										fc = null;
 										return;
 									}
 								}
@@ -1159,6 +1180,7 @@ public class Controller implements ActionListener,MouseListener {
 									board.getActivePlayer().getField().getMonstersExtraArea2()[0].setMode(Mode.DEFENSE);
 								}
 								fusion.setHidden(false);
+								fusion.setLocation(Location.FIELD);
 								SpellCard spell = buttonbis.getSpell();
 								board.getActivePlayer().getField().removeCardfromHandToGraveyard(spell);
 								for (int i1=0;i1<nbmaterielsfusions;i1++){
@@ -1365,6 +1387,7 @@ public class Controller implements ActionListener,MouseListener {
 								for (int i1=0;i1<nbmaterielsfusions;i1++){
 									if (targets.get(i1)==null) {
 										JOptionPane.showMessageDialog(gui, "No compatible monsters");
+										fc = null;
 										return;
 									}
 								}
@@ -1594,6 +1617,7 @@ public class Controller implements ActionListener,MouseListener {
 			JOptionPane.showMessageDialog(gui, "Incompatible monster");
 		}
 		} else {
+			chaine = new ArrayList<SpellCard>();
 			//chaine
 			if(arg0.getSource() instanceof SpellButton){
 				SpellButton trap = (SpellButton)arg0.getSource();
@@ -1876,7 +1900,7 @@ public class Controller implements ActionListener,MouseListener {
 		for (int i=0;i<buttons.size();i++){
 			buttons2[i] = buttons.get(i);
 		}
-		int x = JOptionPane.showOptionDialog(null, "Do you want to active your trap?", "SpellCard",
+		int x = JOptionPane.showOptionDialog(null, "Choose the material fusion", "Fusion",
 				JOptionPane.WARNING_MESSAGE, 0, null, buttons2, buttons2[0]);
 		
 		if (x==buttons.size()-1) {

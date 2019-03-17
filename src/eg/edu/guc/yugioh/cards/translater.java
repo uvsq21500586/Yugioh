@@ -215,6 +215,39 @@ public class translater {
 				
 			};
 			return spellcard;
+		case "Epees de Revelation de la Lumiere":
+			spellcard = new SpellCard(type2,name,desc){
+				public void action(MonsterCard monster) {
+					if (getBoard().getOpponentPlayer().getField().getMonstersExtraArea2()[0]!=null){
+						getBoard().getOpponentPlayer().getField().getMonstersExtraArea2()[0].setCanattack(false);
+					}
+					
+					for (int i=0;i<5;i++) {
+						if (getBoard().getOpponentPlayer().getField().getMonstersArea2()[i]!=null) {
+							getBoard().getOpponentPlayer().getField().getMonstersArea2()[i].setCanattack(false);
+						}
+					}
+				}
+				public void actionmonstreadversejoue(MonsterCard monster){
+					monster.setCanattack(false);
+				}
+				public void gotograveyard() {
+					if (getBoard().getOpponentPlayer().getField().getMonstersExtraArea2()[0]!=null){
+						getBoard().getOpponentPlayer().getField().getMonstersExtraArea2()[0].setCanattack(true);
+					}
+					
+					for (int i=0;i<5;i++) {
+						if (getBoard().getOpponentPlayer().getField().getMonstersArea2()[i]!=null) {
+							getBoard().getOpponentPlayer().getField().getMonstersArea2()[i].setCanattack(true);
+						}
+					}
+				}
+				
+			};
+			
+			spellcard.setTimespell(true);
+			spellcard.setTimeturn(6);
+			return spellcard;
 		case "Etincelles":
 			spellcard = new SpellCard(type2,name,desc){
 				@Override

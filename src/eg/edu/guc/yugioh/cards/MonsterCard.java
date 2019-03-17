@@ -19,6 +19,7 @@ public class MonsterCard extends Card {
 	private boolean switchedMode;
 	private boolean attacked;
 	private boolean lockswitch;
+	private boolean canattack;
 
 	public int getBasedefensePoints() {
 		return basedefensePoints;
@@ -58,6 +59,7 @@ public class MonsterCard extends Card {
 		this.attribut = attr;
 		this.type2 = type2;
 		lockswitch = false;
+		canattack = true;
 
 	}
 
@@ -684,4 +686,14 @@ public class MonsterCard extends Card {
 
 	}
 
+	
+	public boolean isCanattack() {
+		return canattack;
+	}
+
+	public void setCanattack(boolean canattack) {
+		this.canattack = canattack;
+	}
+
+	
 }

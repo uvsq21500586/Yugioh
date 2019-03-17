@@ -12,6 +12,8 @@ import eg.edu.guc.yugioh.board.player.Player;
 public abstract class SpellCard extends Card {
 
 	protected String type2;
+	protected boolean timespell;
+	protected int timeturn;
 	protected boolean fusionspell;
 	protected boolean targetspell;
 	protected boolean targetmonster;
@@ -34,6 +36,8 @@ public abstract class SpellCard extends Card {
 		nombrecible = new ArrayList<Integer>();
 		nombretotalcible = 0;
 		fusionspell = false;
+		timespell =false;
+		timeturn = 0;
 	}
 	public String getType2() {
 		return type2;
@@ -108,6 +112,9 @@ public abstract class SpellCard extends Card {
 	public void setNombretotalcible(int nombretotalcible) {
 		this.nombretotalcible = nombretotalcible;
 	}
+	public void actionmonstreadversejoue(MonsterCard monster){
+		
+	}
 	
 	
 	public boolean isFusionspell() {
@@ -120,5 +127,19 @@ public abstract class SpellCard extends Card {
 		return true;
 		
 	}
+	public boolean isTimespell() {
+		return timespell;
+	}
+	public void setTimespell(boolean timespell) {
+		this.timespell = timespell;
+	}
+	public int getTimeturn() {
+		return timeturn;
+	}
+	public void setTimeturn(int timeturn) {
+		this.timeturn = timeturn;
+	}
+	
+	
 	
 }

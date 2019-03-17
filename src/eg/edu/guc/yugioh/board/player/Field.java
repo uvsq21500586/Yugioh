@@ -432,7 +432,7 @@ public class Field {
 		}
 		
 		spell.action(monster);
-		if (!spell.getType2().contains("continue")){
+		if (!spell.getType2().contains("continue") && !spell.isTimespell()){
 			removeSpellToGraveyard(spell);
 		}
 
@@ -456,7 +456,7 @@ public class Field {
 			throw new WrongPhaseException();
 
 		spell.actionbis(spell2);
-		if (!spell.getType2().contains("continue")){
+		if (!spell.getType2().contains("continue") && !spell.isTimespell()){
 			removeSpellToGraveyard(spell);
 		}
 
@@ -470,6 +470,7 @@ public class Field {
 		if (!spellArea.contains(spell))
 			return;
 
+		spell.gotograveyard();
 		spellArea.remove(spell);
 		graveyard.add(spell);
 		spell.setLocation(Location.GRAVEYARD);
@@ -586,6 +587,11 @@ public class Field {
 				monstersArea2[i].setSwitchedMode(false);
 			}
 		}
+		
+		if (monstersExtraArea2[0]!=null){
+			monstersExtraArea2[0].setAttacked(false);
+			monstersExtraArea2[0].setSwitchedMode(false);
+		}
 		/*
 		for (MonsterCard m : monstersArea) {
 			m.setAttacked(false);
@@ -593,6 +599,7 @@ public class Field {
 		}*/
 
 		Card.getBoard().nextPlayer();
+		
 		Card.getBoard().getActivePlayer().setNumeroturn(Card.getBoard().getActivePlayer().getNumeroturn()+1);
 
 	}
@@ -607,7 +614,7 @@ public class Field {
 	}
 	public boolean switchMonsterMode(MonsterCard monster) {
 
-		if (!MonsterInField(monster))
+		if (!MonsterInField(monster) && (monstersExtraArea2[0]==null || !monstersExtraArea2[0].equals(monster)))
 			return false;
 
 		if (phase == Phase.BATTLE)

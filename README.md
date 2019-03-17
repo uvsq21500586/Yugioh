@@ -2,7 +2,6 @@
 
 This Project was done as a final project for CS04 Course in German University in Cairo then upgraded by a doctorant in French University in Versailles.
 
-The project was chosen as one of the top 15 projects among 400 other projects.
 
 ### Game Trailer
 
