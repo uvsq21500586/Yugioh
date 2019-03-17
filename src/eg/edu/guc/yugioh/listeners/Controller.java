@@ -764,6 +764,12 @@ public class Controller implements ActionListener,MouseListener {
 									sc=null;
 									tc=null;
 									return;
+								} else if (!monster.isCanattack()) {
+									JOptionPane.showMessageDialog(gui, "This monster cannot attack");
+									fc=null;
+									sc=null;
+									tc=null;
+									return;
 								}
 								int x = activerPiege();
 								if (x==0) {

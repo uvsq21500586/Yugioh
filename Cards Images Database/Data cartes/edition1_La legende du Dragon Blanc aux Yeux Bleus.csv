@@ -112,3 +112,7 @@ Spell,normal,Polymerisation,Envoyez de votre main ou de votre Terrain au Cimetiè
 Monster,normal,Elfe Mystique,lumiere,elfe,Une délicate elfe qui manque d'offensive mais dont la fantastique défense est renforcée par un pouvoir mystique.,800,2000,4
 Monster,normal,Malediction du Dragon,tenebre,dragon,Dragon malfaisant qui exploite les forces des ténèbres pour exécuter une attaque puissante.,2000,1500,5
 Spell,normal,Epees de Revelation de la Lumiere,Lorsque cette carte est activée les monstres face cachée de votre adversaire sont retournés face visible mais restent en position de défense à ce moment et tous les effets des monstres sont immédiatement activés Après activation de cette carte celle-ci reste sur le terrain durant les prochains 3 tours de votre adversaire Tant que cette carte reste sur le terrain tous les monstres sur le terrain de votre adversaire ne peuvent pas attaquer.
+Monster,effect,Insecte Mangeur d'Hommes,terre,insecte,FLIP: Flip : Détruit 1 monstre sur le Terrain.,450,600,2
+Monster,normal,Dragon Blanc aux Yeux Bleus,lumiere,dragon,Ce dragon légendaire est un puissant moteur de destruction. Rares sont ceux qui ont survécu à cette terrifiante créature quasiment invincible pour en parler.,3000,2500,8
+Monster,normal,Magicien Sombre,tenebre,magicien,Mage suprème en termes d'attaque et défense.,2500,2100,7
+Monster,normal,Dragon Noir aux Yeux Rouges,tenebre,dragon,Dragon féroce à l'attaque meutrière.,2400,2000,7

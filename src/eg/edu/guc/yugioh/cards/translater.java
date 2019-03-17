@@ -766,6 +766,24 @@ public class translater {
 				}
 			};
 			return spellcard;
+		case "Polymerisation":
+			spellcard = new SpellCard(type2,name,desc){
+				public boolean conditionactivation() {
+					/*
+					if (getBoard().getActivePlayer().getField().getExtradeck().getMonsters().size()>0) {
+						return true;
+					}*/
+					for (int i=0;i<getBoard().getActivePlayer().getField().getExtradeck().getMonsters().size();i++) {
+						if (getBoard().getActivePlayer().getField().getExtradeck().getMonsters().get(i).getType2().contains("fusion")) {
+							return true;
+						}
+					}
+					
+					return false;
+				}
+			};
+			spellcard.setFusionspell(true);
+			return spellcard;
 		case "Puissance de Kaishin":
 			spellcard = new EquipmentSpellCard(type2,name,desc){
 				
@@ -790,23 +808,7 @@ public class translater {
 				
 			};
 			return spellcard;
-		case "Polymerisation":
-			spellcard = new SpellCard(type2,name,desc){
-				public boolean conditionactivation() {
-					if (getBoard().getActivePlayer().getField().getExtradeck().getMonsters().size()>0) {
-						return true;
-					}
-					for (int i=0;i<getBoard().getActivePlayer().getField().getExtradeck().getMonsters().size();i++) {
-						if (getBoard().getActivePlayer().getField().getExtradeck().getMonsters().get(i).getType2().contains("fusion")) {
-							return true;
-						}
-					}
-					
-					return false;
-				}
-			};
-			spellcard.setFusionspell(true);
-			return spellcard;
+		
 		case "Raigeki":
 			spellcard = new SpellCard(type2,name,desc){
 				//targetmonster = false;
@@ -1627,6 +1629,32 @@ public class translater {
 								
 						} else {
 							getBoard().getOpponentPlayer().getField().removeMonsterToHand(getBoard().getOpponentPlayer().getField().getpositioninMonsterField( (MonsterCard)card.get(0)));
+						}
+					}
+				};
+				((EffectMonsterCard)monstercard).setMultipletargetcard(true);
+				((EffectMonsterCard)monstercard).setNombretotalcible(1);
+				((EffectMonsterCard)monstercard).getNombrecible().add(1);
+				((EffectMonsterCard)monstercard).getLocationcible().add("opponent monster field");
+				((EffectMonsterCard)monstercard).setTypeeffect("flip");
+				return monstercard;
+			case "Insecte Mangeur d'Homme":
+				monstercard2 = new MonsterCard(n,desc,attr,esp,l,a,d,type2);
+				monstercard = new EffectMonsterCard(monstercard2){
+					public boolean conditionactivation() {
+						if (getBoard().getOpponentPlayer().getField().countMonstersonField()>0 ){
+							return true;
+						}
+						return false;
+					}
+					
+					public void actionmulti(ArrayList<Card> card) {
+						if (getBoard().getOpponentPlayer().getField().getMonstersExtraArea2()[0]!=null && getBoard().getOpponentPlayer().getField().getMonstersExtraArea2()[0].equals(card.get(0)) ) {
+								card.get(0).setLocation(Location.EXTRADECK);
+								getBoard().getOpponentPlayer().getField().removeMonsterExtraToGraveyard();
+								
+						} else {
+							getBoard().getOpponentPlayer().getField().removeMonsterToGraveyard(getBoard().getOpponentPlayer().getField().getpositioninMonsterField( (MonsterCard)card.get(0)));
 						}
 					}
 				};
