@@ -1,7 +1,6 @@
 # YU-GI-OH Video Game
 
-This Project was done as a final project for CS04 Course in German University in Cairo then upgraded by a doctorant in French University in Versailles.
-
+The users of this game can compare two decks to see which one is better.
 
 ### Game Trailer
 
